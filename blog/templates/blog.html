@@ -153,12 +153,12 @@
 <div class="sidebar">
 <center>
 <div id="subbg" class="w3-contain   " style="background-color: white;width:90%;height:30%;border-top:3px #5f0a09 solid;padding: 10px;border-radius: 1px;	">
-	<form action="/blog/subscribe/" method="post">{% csrf_token %}
+	<form action="/subscribe/" method="post">{% csrf_token %}
 	 <h3 style="padding-left: 15px;color:#5f0a09;">Name <input class="w3-contain w3-white  " style="border:darkred solid 1px;width:80%;padding: 5px;" type="text" name="name"></h3>
 	 <h3 style="padding-left: 15px;color:#5f0a09;">Email  <input class="w3-contain w3-white  " style="border:darkred solid 1px;width:80%;padding: 5px;margin-left: 7px;" type="text" name="email"> </h3>
 	 <center>
 	 <input id="subbtn" class="w3-contain  w3-color-green w3-border-orange w3-round-xlarge" style="width: 150px;color:white;font-size: 25px;background-color: #5f0a09;cursor: pointer;margin-left: 15px;" type="submit" name="submit" value="subscribe"></center>
-	 <h5 style="color:white;margin-bottom: -5px;">Current Subs : {{num}}</h5>
+	 <h5 style="color:gray;margin-bottom: -5px;">Current Subs : {{num}}</h5>
 	
 	</form>
 	</div>
@@ -181,7 +181,7 @@
 
 <div style="border-top:3px solid #5f0a09;padding: 10px;width:90%;">
 <center>
-	<form action="http://www.skyteam.herokuapp.com/search/" method="GET"  >{% csrf_token %}
+	<form action="https://skyteam.herokuapp.com/search/" method="GET"  >{% csrf_token %}
     <input type="text" placeholder ="Search ..." name="search" class="w3-contain" style="width:90%;border-radius: 3px;padding:7px;background: rgba(0, 0, 0, 0.29); color:white;border:1px solid darkred;">
     <br>
     <input type="submit" value="submit" style="background:#5f0a09 ; color:white;border-radius: 5px;padding-right:40px;padding-bottom: 5px;cursor: pointer;">
