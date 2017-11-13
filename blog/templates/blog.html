@@ -103,8 +103,8 @@
     <div id="a"  class="dropdown" style="background: #5f0a09;position:absolute;margin-top:-64px;">
     <button  class="dropbtn" onclick="myFunction1()">Filter category</button>
     <div class="dropdown-content" id="myDropdown1">
-      <a href="http://127.0.0.1:8000/blog">All posts</a>
-      <a href="http://127.0.0.1:8000/news">New posts</a>
+      <a href="https://skyteam.herokuapp.com/blog">All posts</a>
+      <a href="https://skyteam.herokuapp.com/news">New posts</a>
         {%for categorys in category%}
       <a href="{{categorys.get_absolute_url}}">{{categorys.name}}</a>
         {%endfor%}
